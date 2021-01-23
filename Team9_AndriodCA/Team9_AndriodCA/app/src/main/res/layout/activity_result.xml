@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/congratulations"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/congratsLine1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:fontFamily="@font/brusherregular"
+        android:gravity="center"
+        android:inputType="text"
+        android:text="Well Done"
+        android:textColor="#3700B3"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/time" />
+
+    <TextView
+        android:id="@+id/congratsLine2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:fontFamily="@font/brusherregular"
+        android:gravity="center"
+        android:inputType="text"
+        android:text="But could have done better"
+        android:textColor="#3700B3"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/congratsLine1"
+        />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/brusherregular"
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:gravity="left"
+        android:text="Time"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/congratsLine2"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <TextView
+        android:id="@+id/bestTime"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="24dp"
+        android:gravity="left"
+        android:text="Best Time"
+        android:fontFamily="@font/brusherregular"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/time"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <TextView
+        android:id="@+id/grade"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="24dp"
+        android:gravity="left"
+        android:text="Grade"
+        android:fontFamily="@font/brusherregular"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bestTime"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <Button
+        android:id="@+id/mainMenu"
+        android:layout_width="122dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/brusherregular"
+        android:gravity="center"
+        android:text="Main"
+        android:background="#3700B3"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/grade"
+        app:layout_constraintRight_toLeftOf="@id/playAgain"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <Button
+        android:id="@+id/playAgain"
+        android:layout_width="122dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/brusherregular"
+        android:gravity="center"
+        android:text="@string/play"
+        android:background="#3700B3"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/grade"
+        app:layout_constraintLeft_toRightOf="@id/mainMenu"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

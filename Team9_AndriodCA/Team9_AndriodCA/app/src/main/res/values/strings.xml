@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Team9_AndroidCA</string>
+    <string name="congrats">Congragulations!</string>
+    <string name="complete">You have completed </string>
+    <string name="enter">Please enter your name:</string>
+    <string name="play">PLAY AGAIN</string>
+    <string name="result">RESULT</string>
+    <string name="Time">Time Taken</string>
+    <string name="name">Player Name</string>
+    <string name="Grade">Grade</string>
+</resources>

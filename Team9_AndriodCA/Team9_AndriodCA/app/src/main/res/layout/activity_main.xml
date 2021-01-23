@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:grid="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/url"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:inputType="text"
+        android:text="https://stocksnap.io/"
+        android:textSize="15sp"
+        android:imeOptions="actionDone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.1"/>
+
+    <Button
+        android:id="@+id/fetch"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:text="fetch"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/url"
+        app:layout_constraintHeight_percent="0.1"/>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:columnCount="4"
+        app:rowCount="5"
+        app:layout_constraintBottom_toTopOf="@id/indeterminateBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/url"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/image1"
+            android:background="@drawable/logo"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:scaleType="fitXY"
+            grid:layout_columnWeight="1"
+            grid:layout_rowWeight="1"
+            grid:layout_gravity="fill" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/image2"
+            android:background="@drawable/logo"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:scaleType="fitXY"
+            grid:layout_columnWeight="1"
+            grid:layout_rowWeight="1"
+            grid:layout_gravity="fill" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/image3"
+            android:background="@drawable/logo"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:scaleType="fitXY"
+            grid:layout_columnWeight="1"
+            grid:layout_rowWeight="1"
+            grid:layout_gravity="fill" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/image4"
+            android:background="@drawable/logo"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:scaleType="fitXY"
+            grid:layout_columnWeight="1"
+            grid:layout_rowWeight="1"
+            grid:layout_gravity="fill" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/image5"
+            android:background="@drawable/logo"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:scaleType="fitXY"
+            grid:layout_columnWeight="1"
+            grid:layout_rowWeight="1"
+            grid:layout_gravity="fill" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/image6"
+            android:background="@drawable/logo"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:scaleType="fitXY"
+            grid:layout_columnWeight="1"
+            grid:layout_rowWeight="1"
+            grid:layout_gravity="fill" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/image7"
+            android:background="@drawable/logo"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:scaleType="fitXY"
+            grid:layout_columnWeight="1"
+            grid:layout_rowWeight="1"
+            grid:layout_gravity="fill" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/image8"
+            android:background="@drawable/logo"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:scaleType="fitXY"
+            grid:layout_columnWeight="1"
+            grid:layout_rowWeight="1"
+            grid:layout_gravity="fill" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/image9"
+            android:background="@drawable/logo"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:scaleType="fitXY"
+            grid:layout_columnWeight="1"
+            grid:layout_rowWeight="1"
+            grid:layout_gravity="fill" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/image10"
+            android:background="@drawable/logo"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:scaleType="fitXY"
+            grid:layout_columnWeight="1"
+            grid:layout_rowWeight="1"
+            grid:layout_gravity="fill" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/image11"
+            android:background="@drawable/logo"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:scaleType="fitXY"
+            grid:layout_columnWeight="1"
+            grid:layout_rowWeight="1"
+            grid:layout_gravity="fill" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/image12"
+            android:background="@drawable/logo"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:scaleType="fitXY"
+            grid:layout_columnWeight="1"
+            grid:layout_rowWeight="1"
+            grid:layout_gravity="fill" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/image13"
+            android:background="@drawable/logo"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:scaleType="fitXY"
+            grid:layout_columnWeight="1"
+            grid:layout_rowWeight="1"
+            grid:layout_gravity="fill" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/image14"
+            android:background="@drawable/logo"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:scaleType="fitXY"
+            grid:layout_columnWeight="1"
+            grid:layout_rowWeight="1"
+            grid:layout_gravity="fill" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/image15"
+            android:background="@drawable/logo"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:scaleType="fitXY"
+            grid:layout_columnWeight="1"
+            grid:layout_rowWeight="1"
+            grid:layout_gravity="fill" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/image16"
+            android:background="@drawable/logo"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:scaleType="fitXY"
+            grid:layout_columnWeight="1"
+            grid:layout_rowWeight="1"
+            grid:layout_gravity="fill" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/image17"
+            android:background="@drawable/logo"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:scaleType="fitXY"
+            grid:layout_columnWeight="1"
+            grid:layout_rowWeight="1"
+            grid:layout_gravity="fill" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/image18"
+            android:background="@drawable/logo"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:scaleType="fitXY"
+            grid:layout_columnWeight="1"
+            grid:layout_rowWeight="1"
+            grid:layout_gravity="fill" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/image19"
+            android:background="@drawable/logo"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:scaleType="fitXY"
+            grid:layout_columnWeight="1"
+            grid:layout_rowWeight="1"
+            grid:layout_gravity="fill" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/image20"
+            android:background="@drawable/logo"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:scaleType="fitXY"
+            grid:layout_columnWeight="1"
+            grid:layout_rowWeight="1"
+            grid:layout_gravity="fill" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <ProgressBar
+        android:id="@+id/indeterminateBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:max="20"
+        android:progress="0"
+        app:layout_constraintTop_toBottomOf="@id/gridLayout"
+        app:layout_constraintBottom_toTopOf="@id/txtProgress"/>
+
+    <TextView
+        android:id="@+id/txtProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/indeterminateBar"
+        app:layout_constraintVertical_bias="0.893" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
